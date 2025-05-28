@@ -1,0 +1,209 @@
+body{
+  font-size: 16px;
+  font-family:'Roboto',Sans-Serif ;
+  color:#2b283a;
+  margin: 0;
+}
+
+/*typography*/
+
+h1,h3{
+  margin:0;
+}
+
+h1{
+  color:whitesmoke;
+  font-size: 1.75rem;
+}
+
+h2{
+
+  font-size:1.375rem ;
+  /*color: #451c7a;*/
+  margin-top:0px;
+
+}
+
+h3{
+  color:#d0aaff;
+  font-size: 1.25rem;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.subheading {
+    display: block;
+    font-size: 1rem;
+    color: #d0aaff;
+}
+/*links*/
+a{
+  color:#ef5839;
+  text-decoration: underline dotted;
+}
+
+.buy-btn{
+  background-color: #5f29a3;
+  color:whitesmoke;
+}
+
+.info-btn{
+  background-color: #f0e0ff;
+  color: #5f29a3;
+}
+
+.about-btn{
+  background-color: whitesmoke;
+  color:#5f29a3;
+}
+.btn{
+  font-size: 1.125rem;
+  padding: 0.5em 1.1em ;
+  border-radius:4.6px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  margin-bottom:1.4em ;
+}
+
+.btn:hover,
+.btn:active{
+  background-color: #f3e885;
+  color:#2b283a;
+}
+a:hover, a:active{
+ color:#d4b44c;
+}
+
+/*layouts*/
+header,section,footer{
+  padding: 1.25em 0;
+}
+header{
+  background: #5f29a3;
+}
+
+.section-2{
+  background-color: #5f29a3;
+  width:100%;
+  color:whitesmoke;
+}
+
+.container{
+  margin:0 auto;
+  width:90%;
+  max-width: 800%;
+}
+
+.container-in-section-2{
+   display: flex;
+    flex-wrap: wrap;
+    gap:0.85em;
+}
+
+.images-in-container {
+    flex:1 200px;
+    gap:0.85em;
+}
+
+.main-img{
+  width:100% ;
+  max-width: 640px;
+  margin: 0 auto 2em;
+  display: block;
+}
+
+.images-in-section-two{
+  width:100%;
+  border-radius: 4.6px;
+  margin-bottom: 1em;
+}
+
+footer{
+  color:#5f29a3;
+  text-align: center;
+}
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size:1.125rem;
+    padding:0.85em 0;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+/*---media query ---*/
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }  
+
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
+    }  
+}
+
+
+
+@media(min-width: 768px){
+
+    header,
+    section,
+    footer{
+            padding-bottom: 2.875em 0;
+        }
+
+    header .container,
+    nav ul {
+
+        display: flex;
+    }
+    
+    header .container {
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
+    }
+      .btn{
+        display: inline-block;
+        margin-right:0.5em ;
+      }
+
+      h1{
+        font-size: 2.25rem;
+      }
+
+      h2{
+        font-size:1.75rem ;
+      }
+
+      .subheading{
+        font-size: 1.25rem;
+      }
+
+      P{
+        font-size:1.125rem ;
+      }
+    }
+
